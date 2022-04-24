@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="sign.css">
+    <script src="https://kit.fontawesome.com/3ab3195b97.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="signup_container">
+        <div class="signup_box">
+            <div class="signup_left">
+                <div class="logo">
+                    <img src="images/NETWORTY_1.png" alt="">
+                </div>
+                <div class="sign_img">
+                    <img src="images/sign_up.png" alt="">
+                </div>
+            </div>
+            <div class="signup_right">
+                <h1>Hello</h1>
+                <h2>create account</h2>
+                <div class="signup_form">
+                    <form action="" onsubmit="return myFormValidation()" class="form">
+                        <div class="inputIcon">
+                            <span class="icons"><i class="fa-solid fa-user" aria-hidden="true"></i></span>
+                            <input type="text" placeholder="Name" id="username">
+                        </div>
+                        <p id="userError" id="Error"></p>
+                        <div class="inputIcon">
+                            <span class="icons"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+                            <input type="email" placeholder="E-mail" id="email_id">
+                        </div>
+                        <p id="emailError" id="Error"></p>
+                        <div class="inputIcon">
+                            <span class="icons"><i class="fa-solid fa-lock" aria-hidden="true"></i></span>
+                            <input type="password" placeholder="password" id="password">
+                            <span class="right_icon eye" onclick="myfunction()">
+                                <i id="hide2" class="fa-solid fa-eye-slash"></i>
+                                <i id="hide1" class="fa-solid fa-eye"></i>
+                            </span>
+                        </div>
+                        <p id="passwordError" id="Error"></p>
+                        <div class="inputIcon">
+                            <span class="icons"><i class="fa-solid fa-lock" aria-hidden="true"></i></span>
+                            <input type="password" placeholder="conform password" id="cpassword" onkeyup="check()" >
+                            <span class="right_icon" onclick="myRefunction()">
+                                <i id="hide_3" class="fa-solid fa-eye-slash"></i>
+                                <i id="hide_4" class="fa-solid fa-eye"></i>
+                            </span>
+                        </div>
+                        <p id="cpasswordError" id="Error"></p>
+                        <div class="btn">
+                            <button>Sign up</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sign.js"></script>
+</body>
+</html>
